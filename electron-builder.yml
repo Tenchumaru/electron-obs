@@ -1,0 +1,29 @@
+appId: com.github.tenchumaru.electron-obs
+productName: Electron OBS
+directories:
+  buildResources: resources
+files:
+  - out
+asarUnpack:
+  - resources/**
+win:
+  icon: resources/favicon.ico
+mac:
+  category: public.app-category.utilities
+  entitlementsInherit: resources/entitlements.mac.plist
+  extendInfo:
+    - NSCameraUsageDescription: Application requests access to the device's camera.
+    - NSDocumentsFolderUsageDescription: Application requests access to the user's Documents folder.
+    - NSDownloadsFolderUsageDescription: Application requests access to the user's Downloads folder.
+    - NSMicrophoneUsageDescription: Application requests access to the device's microphone.
+  icon: src/favicon.icns
+  notarize: false
+  target: 7z
+linux:
+  target:
+    - AppImage
+    - snap
+    - deb
+  category: Utility
+  icon: src/favicon.png
+npmRebuild: false

@@ -1,0 +1,16 @@
+{
+  "name": "native",
+  "version": "0.1.0",
+  "description": "My native add-on for Electron",
+  "gypfile": true,
+  "license": "MIT",
+  "main": "./build/Release/native",
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610",
+  "scripts": {
+    "build": "node-gyp rebuild --target=31.1.0 --arch=x64 --dist-url=https://electronjs.org/headers",
+    "postinstall": "yarn build"
+  },
+  "dependencies": {
+    "nan": "^2.20.0"
+  }
+}

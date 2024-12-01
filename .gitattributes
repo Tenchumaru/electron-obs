@@ -1,0 +1,5 @@
+# Detect text files and perform newline conversions as necessary.
+* text=auto
+*.icns filter=lfs diff=lfs merge=lfs -text
+*.ico filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text

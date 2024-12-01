@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": true,
+    "jsx": "react-jsx",
+    "types": [ "vite/client" ]
+  },
+  "extends": "@electron-toolkit/tsconfig/tsconfig.web.json",
+  "include": [
+    "src/*.d.ts*",
+    "src/renderer/**/*.ts*"
+  ]
+}

@@ -1,0 +1,4 @@
+@ECHO OFF
+SETLOCAL
+
+FOR %%I IN (dist out) DO IF EXIST %%I RD /Q /S %%I

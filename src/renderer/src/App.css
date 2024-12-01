@@ -1,0 +1,13 @@
+.app {
+  min-width: 400px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+}

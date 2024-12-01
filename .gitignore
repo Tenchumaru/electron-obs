@@ -1,0 +1,12 @@
+.vs/
+bin/
+build/
+dist/
+node_modules/
+obj/
+out/
+venv/
+*.log*
+*.sw[op]
+*proj.user
+.DS_Store

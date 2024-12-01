@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Main Process",
+      "comment": "https://electron-vite.org/guide/debugging",
+      "console": "externalTerminal",
+      "cwd": "${workspaceFolder}",
+      "request": "launch",
+      "runtimeArgs": [ "--sourcemap", "--watch" ],
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron-vite",
+      "skipFiles": [
+        "<node_internals/**"
+      ],
+      "stopOnEntry": true,
+      "type": "node",
+      "windows": {
+        "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron-vite.cmd"
+      }
+    }
+  ]
+}

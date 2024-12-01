@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.784122">
+  <PropertyGroup>
+    <!--Command to run on project build-->
+    <BuildCommand>yarn build</BuildCommand>
+    <!--Folder to contain build objects-->
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\out</BuildOutputFolder>
+    <!--Command to run on project clean-->
+    <CleanCommand>CALL clean.cmd</CleanCommand>
+    <!--I'm using Yarn.-->
+    <ShouldRunNpmInstall>false</ShouldRunNpmInstall>
+    <StartupCommand>yarn start</StartupCommand>
+  </PropertyGroup>
+</Project>
